@@ -1,0 +1,20 @@
+.c1 {
+    font-family: "Verdana", "DejaVu Sans", sans-serif;
+    background-color: rgb(243, 152, 152)
+}
+
+.c2 {
+    font-size: 24px;
+}
+
+#second {
+    color: blue;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+#fourth {
+    background-color: rgb(127, 207, 127);
+    font-size: 24px;
+    font-weight: bold;
+}
