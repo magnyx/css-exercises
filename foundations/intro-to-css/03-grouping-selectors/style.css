@@ -1,0 +1,15 @@
+.one {
+    background-color: black;
+    font-weight: 800;
+    color: white;
+}
+.two {
+    background-color: yellow;
+}
+
+.one, .two {
+    font-family: Helvetica, "Times New Roman", sans-serif;
+    font-size: 28px;
+}
+
+/* Note: Make classes to add CSS styling. */
