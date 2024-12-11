@@ -1,18 +1,12 @@
+/* Comments at the bottom */
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  padding: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3px;
-}
-
-.left-links {
-  flex: 4 1 auto;
-  align-self: right;
-  display: flex;
-  margin-left: 0;
-  margin-right: auto;
 }
 
 .logo {
@@ -20,24 +14,14 @@
   font-weight: 900;
   color: tomato;
   background: white;
-  padding: 4px 16px;
-  flex: 0 1 50px;
-}
-
-.right-links {
-  flex: 4 1 auto;
-  margin-left: auto;
-  margin-right: 0;
-  align-self: left;
-  display: flex;
-  justify-content: flex-end;
+  padding: 4px 32px;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
   align-content: space-around;
-  flex: 0 1 auto;
+  display: flex;
   gap: 10px;
   display: flex;
   /* remove padding to remove excess space before list */
@@ -53,3 +37,17 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
+/* Why everything works so far, probably 
+Discovered there were many things I added that were unnecessary, so I changed things accordingly and - hopefully - learned more with this.
+
+Flex value when omitted is "flex: 0 1 auto"
+I learned there is no need to add a value to "flex-grow" in this situation, so the items won't grow any larger.
+There's no need to change "flex-shrink" because the elements should shrink if necessary
+The most important thing here is "flex-basis", which is by default "auto", which means it should use the whole space available inside the container (.header). GOOD!
+
+Most importantly, we need to add "justify-content: space-between" to the .header because then it spaces out evenly our sections of < right / middle / left >
+
+And then, add "display: flex" once again to the <ul> so their elements will also flex.
+
+To smooth things out, remove padding and add margin from <ul>. Also add "align-items:center" to .header so everything stays leveled in the middle */
