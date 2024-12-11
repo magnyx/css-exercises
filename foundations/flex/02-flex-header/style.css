@@ -20,23 +20,30 @@
   font-weight: 900;
   color: tomato;
   background: white;
-  padding: 4px 32px;
+  padding: 4px 16px;
   flex: 0 1 50px;
 }
 
 .right-links {
-  flex: 4 0 auto;
-  display: flex;
+  flex: 4 1 auto;
   margin-left: auto;
   margin-right: 0;
+  align-self: left;
+  display: flex;
+  justify-content: flex-end;
 }
+
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
   align-content: space-around;
-  flex: 1 0 150px;
+  flex: 0 1 auto;
   gap: 10px;
   display: flex;
+  /* remove padding to remove excess space before list */
+  padding: 0;
+  /* add margin to make header look smoother */
+  margin: 10px;
 }
 
 a {
@@ -45,5 +52,4 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
-  flex: 1 1 auto;
 }
