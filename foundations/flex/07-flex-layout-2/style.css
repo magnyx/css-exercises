@@ -8,13 +8,21 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: bold;
+  align-content: center;
+  text-indent: 3%;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  align-content: center;
+  text-align: center;
 }
+
+.big-container
 
 .sidebar {
   width: 300px;
