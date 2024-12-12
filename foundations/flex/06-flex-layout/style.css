@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100vh;
 }
 
 .header {
@@ -22,13 +23,15 @@ body {
 .left-links {
   align-items: flex-start;
   display: flex;
-  gap: 10px;
+  gap: 12px;
+  margin: 15px;
 }
 
 .right-links {
   align-items: flex-end;
   display: flex;
-  gap: 10px;
+  gap: 12px;
+  margin: 15px;
 }
 
 ul {
@@ -36,11 +39,20 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: grey;
+  font-size: 17px;
+}
+
 .content{
   margin: auto;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 img {
@@ -52,6 +64,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
 }
 
 input {
@@ -62,6 +75,7 @@ input {
 }
 
 .footer {
+  background-color: rgba(211, 211, 211, 0.5);
   margin-top: auto;
   align-content: flex-end;
   display: flex;
