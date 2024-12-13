@@ -9,17 +9,18 @@ body {
   background: darkmagenta;
   color: white;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 800;
   align-content: center;
-  text-indent: 3%;
+  text-indent: 15px;
 }
 
 .footer {
   height: 72px;
   background: #eee;
-  color: darkmagenta;""
+  color: darkmagenta;
   align-content: center;
   text-align: center;
+  margin: auto;
 }
 
 .big-container {
@@ -36,21 +37,25 @@ body {
 ul {
   list-style-type: none;
   padding: 0;
-  margin: 21px;
+  margin: 15px;
 }
 
 a {
   text-decoration: none;
   color: white;
-  font-size: 25px;
-  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+li {
+  margin-bottom: 15px;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
-  padding: 25px;
+  align-items: flex-start;
+  gap: 35px;
+  padding: 45px;
 }
 
 .card {
@@ -59,7 +64,6 @@ a {
   border-radius: 4px;
   width: 300px;
   height: 120px;
-  margin: auto;
   align-content: center;
-  padding: 3%;
+  padding: 16px;
 }
